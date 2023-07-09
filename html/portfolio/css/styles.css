@@ -9,6 +9,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 body {
   background-color: var(--color5);
@@ -17,15 +18,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem;
 }
 header {
   width: 100%;
-  max-height: 100px;
+  height: 132px;
   background-color: var(--color3);
   display: flex;
   flex-direction: row;
   align-items: center;
-  border-radius: 16px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
   margin-left: 1rem;
   margin-right: 1rem;
 }
@@ -56,28 +59,43 @@ header nav ul li {
 }
 main {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container_1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 main #cards {
   width: 100%;
-  max-height: 700px;
+  margin: 30px;
   background-color: #e3ba6a;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   border-radius: 10px;
+  padding: 1rem;
 }
 main .card {
-  margin: 1rem;
   padding: 1rem;
-  min-width: 400px;
-  min-height: 100px;
-  border-style: solid;
-  border-width: 5px 5px 5px 5px;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 300px;
+  border: white 5px solid;
   border-radius: 10px;
   border-color: var(--color4);
 }
+
 main h1 {
   color: white;
 }
 main h2 {
   color: white;
+}
+main .ul-lenguages li {
+  list-style: none;
+  color: white;
+  margin-left: 1rem;
 }

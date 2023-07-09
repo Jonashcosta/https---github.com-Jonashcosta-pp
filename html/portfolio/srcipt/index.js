@@ -78,16 +78,6 @@ async function startrepos(reposURL) {
         }
       }
 
-      //   // Buscar elemento pai
-      //   let elemento_pai = document.getElementById('cards');
-
-      //   // Criar elemento
-
-      //   let tagDiv = document.createElement('div');
-      //   let tagA = document.createElement('a');
-      //   let tagH2 = document.createElement('h2');
-      //   let tagH3 = document.createElement('h3');
-
       // inserir class
       tagDiv.classList.add('card');
       tagA.classList.add('link');
